@@ -127,5 +127,80 @@ An object storing red, green, blue and alpha data for a color (all _Range: `0-25
 
 # Examples
 ## 1. 2x2 Red, Green, Yellow and Blue pixels
+![Output](https://raw.githubusercontent.com/DrMaxNix/pixelimgjs/main/examples/2x2-Red-Green-Yellow-and-Blue-pixels.png "Output")
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
 
-## 2. xxx RGB color-palette
+<img id="img1" style="width: calc(100vh - 20px); height: calc(100vh - 20px);" />
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		// GET A PIXELIMG-OBJECT FOR IMG WITH ID 'IMG1' //
+		const img1 = new Pixelimg(document.getElementById("img1"), {matrix:2, image:2048});
+		
+		
+		// SET PIXELS //
+		//generate matrix
+		var matrix = [
+			[
+				Pixelimg.color_from_hex("#F00"),
+				Pixelimg.color_from_hex("#0F0")
+			], [
+				Pixelimg.color_from_hex("#FF0"),
+				Pixelimg.color_from_hex("#00F")
+			]
+		];
+		
+		//push matrix
+		img1.setMatrix(matrix);
+		
+		
+		// DRAW/UPDATE THE IMAGE //
+		img1.draw();
+	});
+</script>
+```
+
+
+## 2. 64x64 RGB color-palette
+![Output](https://raw.githubusercontent.com/DrMaxNix/pixelimgjs/main/examples/64x64-RGB-color-palette.png "Output")
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
+
+<img id="img1" style="width: calc(100vh - 20px); height: calc(100vh - 20px);" />
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		// GET A PIXELIMG-OBJECT FOR IMG WITH ID 'IMG1' //
+		const img1 = new Pixelimg(document.getElementById("img1"), {matrix:(16 * 4), image:2048});
+		
+		
+		// SET PIXELS //
+		for(var r = 0; r < 16; r++){ //red counter
+			//get offsets for this red-intensity's square
+			var x_offset = (r % 4) * 16;
+			var y_offset = parseInt(r / 4) * 16;
+			
+			for(var g = 0; g < 16; g++){ //green counter
+				for(var b = 0; b < 16; b++){ //blue counter
+					//get color components from position
+					var color_red = r * (255 / 15);
+					var color_green = g * (255 / 15);
+					var color_blue = b * (255 / 15);
+					
+					//get pixel coordinates
+					var coord_x = x_offset + g;
+					var coord_y = y_offset + b;
+					
+					//set pixel
+					img1.setPixel({x:coord_x, y:coord_y, color:Pixelimg.color_from_rgba(color_red, color_green, color_blue, 1)});
+				}
+			}
+		}
+		
+		
+		// DRAW/UPDATE THE IMAGE //
+		img1.draw();
+	});
+</script>
+```
