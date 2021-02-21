@@ -89,7 +89,7 @@ _Get pixelimg-compatible rgba color from rgba-values_
 A [Pixelimg-color-object](#color-object)
 
 
-## setPixel(OPTIONS)
+## set_pixel(OPTIONS)
 _Set pixel at X, Y to COLOR_
 
 ### Arguments
@@ -99,7 +99,7 @@ _Set pixel at X, Y to COLOR_
   - `OPTIONS.color` Color for that pixel ([Pixelimg-color-object](#color-object))
 
 
-## setMatrix(MATRIX)
+## set_matrix(MATRIX)
 _Update whole matrix from 2d-array_
 
 ### Arguments
@@ -152,7 +152,7 @@ An object storing red, green, blue and alpha data for a color (all _Range: `0-25
 		];
 		
 		//push matrix
-		img1.setMatrix(matrix);
+		img1.set_matrix(matrix);
 		
 		
 		// DRAW/UPDATE THE IMAGE //
@@ -193,7 +193,7 @@ An object storing red, green, blue and alpha data for a color (all _Range: `0-25
 					var coord_y = y_offset + b;
 					
 					//set pixel
-					img1.setPixel({x:coord_x, y:coord_y, color:Pixelimg.color_from_rgba(color_red, color_green, color_blue, 1)});
+					img1.set_pixel({x:coord_x, y:coord_y, color:Pixelimg.color_from_rgba(color_red, color_green, color_blue, 1)});
 				}
 			}
 		}
