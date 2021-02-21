@@ -1,0 +1,30 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
+
+<img id="img1" style="width: calc(100vh - 20px); height: calc(100vh - 20px);" />
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		// GET A PIXELIMG-OBJECT FOR IMG WITH ID 'IMG1' //
+		const img1 = new Pixelimg(document.getElementById("img1"), {matrix:2, image:2048});
+		
+		
+		// SET PIXELS //
+		//generate matrix
+		var matrix = [
+			[
+				Pixelimg.color_from_hex("#F00"),
+				Pixelimg.color_from_hex("#0F0")
+			], [
+				Pixelimg.color_from_hex("#FF0"),
+				Pixelimg.color_from_hex("#00F")
+			]
+		];
+		
+		//push matrix
+		img1.setMatrix(matrix);
+		
+		
+		// DRAW/UPDATE THE IMAGE //
+		img1.draw();
+	});
+</script>
