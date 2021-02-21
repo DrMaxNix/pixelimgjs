@@ -35,7 +35,10 @@ Arguments shown above:
 - `matrix` The pixel-matrix will have 8 by 8 pixels in size
 - `image` The png image which is generated will have a size of 512 by 512 pixels (=resolution)
 
-More arguments for the constructor can be found in the [Functions/constructor](#constructor) section.
+More arguments for the constructor can be found in the Functions section at [new Pixelimg(ELEMENT, OPTIONS)](#new-pixelimgelement-options).
+
+
+
 
 
 # Functions
@@ -54,6 +57,10 @@ _Return a new Pixelimg-object for an ELEMENT with OPTIONS_
   - `OPTIONS.autodraw` Redraw image every time the matrix is changed; _default: `false`_
   - `OPTIONS.firstdraw` Draw image after the constructor was called; _default: `true`_
 
+### Returns
+A Pixelimg-object
+
+
 ## color_from_hex(HEX_STRING)
 _Get pixelimg-compatible rgba color from css-like hex-color_
 
@@ -64,6 +71,28 @@ _Get pixelimg-compatible rgba color from css-like hex-color_
   - eg. `#0` -> `#000000` -> Black
   - eg. `#08` -> `#080808` -> A bit lighter than black
   - eg. `0F0` -> `#00FF00` -> Green
+
+### Returns
+A [Pixelimg-color-object](#color-object)
+
+
+## color_from_hex(HEX_STRING)
+_Get pixelimg-compatible rgba color from css-like hex-color_
+
+### Arguments
+- HEX_STRING: Hex-color as string
+  - eg. `#FF0000` -> Red
+  - eg. `#F8A` -> `#FF88AA` -> Pink-ish
+  - eg. `#0` -> `#000000` -> Black
+  - eg. `#08` -> `#080808` -> A bit lighter than black
+  - eg. `0F0` -> `#00FF00` -> Green
+
+
+
+## Color-object
+
+
+
 
 
 
