@@ -76,20 +76,45 @@ _Get pixelimg-compatible rgba color from css-like hex-color_
 A [Pixelimg-color-object](#color-object)
 
 
-## color_from_hex(HEX_STRING)
-_Get pixelimg-compatible rgba color from css-like hex-color_
+## color_from_rgba(R, G, B, A)
+_Get pixelimg-compatible rgba color from rgba-values_
 
 ### Arguments
-- HEX_STRING: Hex-color as string
-  - eg. `#FF0000` -> Red
-  - eg. `#F8A` -> `#FF88AA` -> Pink-ish
-  - eg. `#0` -> `#000000` -> Black
-  - eg. `#08` -> `#080808` -> A bit lighter than black
-  - eg. `0F0` -> `#00FF00` -> Green
+- R: Red component; _Range: `0-255 (int)`_
+- G: Green component; _Range: `0-255 (int)`_
+- B: Blue component; _Range: `0-255 (int)`_
+- A: Alpha (opacity); _Range: `0.0-1.0 (float)`_
 
+### Returns
+A [Pixelimg-color-object](#color-object)
+
+
+## setPixel(OPTIONS)
+_Set pixel at X, Y to COLOR_
+
+### Arguments
+- OPTIONS: Named args
+  - `OPTIONS.x` Pixel's x-coordinate; _Starting from `0` = furthest left_
+  - `OPTIONS.y` Pixel's y-coordinate; _Starting from `0` = furthest top_
+  - `OPTIONS.color` Color for that pixel ([Pixelimg-color-object](#color-object))
+
+
+## setMatrix(MATRIX)
+_Update whole matrix from 2d-array_
+
+### Arguments
+- MATRIX: 2d-array of [Pixelimg-color-objects](#color-object)
+
+
+## draw()
+_Draw new image from matrix_
 
 
 ## Color-object
+- what it is
+- how to get it
+  - [color_from_hex(HEX_STRING)]
+  - [color_from_rgba(R, G, B, A)]
 
 
 
