@@ -130,7 +130,7 @@ class Pixelimg {
 	/*
 		Set pixel at X, Y to COLOR
 	*/
-	setPixel(OPTIONS){
+	set_pixel(OPTIONS){
 		// CHECK AND GET INPUTS //
 		//x
 		if(OPTIONS.x === parseInt(OPTIONS.x, 10) && OPTIONS.x > -1 && OPTIONS.x < this.matrix_width){
@@ -171,7 +171,7 @@ class Pixelimg {
 	/*
 		Update whole matrix from 2d-array
 	*/
-	setMatrix(MATRIX){
+	set_matrix(MATRIX){
 		// SET NEW MATRIX //
 		this.matrix = MATRIX;
 		
