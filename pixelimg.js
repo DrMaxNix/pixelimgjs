@@ -1,4 +1,4 @@
-/*! Pixelimg.js v1.0.0 | (c) DrMaxNix 2021 | www.drmaxnix.de */
+/*! Pixelimg.js v1.0.1 | (c) DrMaxNix 2021 | www.drmaxnix.de */
 
 class Pixelimg {
 	/*
@@ -124,7 +124,7 @@ class Pixelimg {
 		Get pixelimg-compatible rgba color from rgba-values
 	*/
 	static color_from_rgba(R, G, B, A){
-		return {r:R, g:G, b:B, a:(A * 255)};
+		return {r:R, g:G, b:B, a:Math.round(A * 255)};
 	}
 	
 	/*
