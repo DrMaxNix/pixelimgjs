@@ -111,10 +111,14 @@ _Draw new image from matrix_
 
 
 ## Color-object
-- what it is
-- how to get it
-  - [color_from_hex(HEX_STRING)]
-  - [color_from_rgba(R, G, B, A)]
+An object storing red, green, blue and alpha data for a color (all _Range: `0-255 (int)`_)
+```javascript
+{r:255, g:127, b:0, a:255}
+```
+
+### How to get it
+- [color_from_hex()](#color_from_hexhex_string)
+- [color_from_rgba()](#color_from_rgbar-g-b-a)
 
 
 
@@ -122,6 +126,6 @@ _Draw new image from matrix_
 
 
 # Examples
-## 1. Do something
+## 1. 2x2 Red, Green, Yellow and Blue pixels
 
-## 2. Do something else
+## 2. xxx RGB color-palette
