@@ -1,4 +1,4 @@
-/*! Pixelimg.js v1.0.0 | (c) DrMaxNix 2021 | www.drmaxnix.de */
+/!* Pixelimg.js v1.0.0 | (c) DrMaxNix 2021 | www.drmaxnix.de */
 
 class Pixelimg {
 	/*
