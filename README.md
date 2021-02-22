@@ -13,7 +13,7 @@ To include Pixelimg.js in your html code you have two options:
 
 Example using jsdelivr.net:
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1/pixelimg.min.js"></script>
 ```
 
 
@@ -129,7 +129,7 @@ An object storing red, green, blue and alpha data for a color (all _Range: `0-25
 ## 1. 2x2 Red, Green, Yellow and Blue pixels
 ![Output](https://raw.githubusercontent.com/DrMaxNix/pixelimgjs/main/examples/2x2-Red-Green-Yellow-and-Blue-pixels.png "Output")
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1/pixelimg.min.js"></script>
 
 <img id="img1" style="width: calc(100vh - 20px); height: calc(100vh - 20px);" />
 
@@ -165,7 +165,7 @@ An object storing red, green, blue and alpha data for a color (all _Range: `0-25
 ## 2. 64x64 RGB color-palette
 ![Output](https://raw.githubusercontent.com/DrMaxNix/pixelimgjs/main/examples/64x64-RGB-color-palette.png "Output")
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1.0/pixelimg.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/DrMaxNix/pixelimgjs@1/pixelimg.min.js"></script>
 
 <img id="img1" style="width: calc(100vh - 20px); height: calc(100vh - 20px);" />
 
