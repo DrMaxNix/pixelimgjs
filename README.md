@@ -1,5 +1,5 @@
 # Pixelimg.js
-[![GitHub release](https://img.shields.io/badge/release-v1.0.1-orange)](https://github.com/DrMaxNix/pixelimgjs)
+[![GitHub release](https://img.shields.io/badge/release-v1.0.1-orange)](https://github.com/DrMaxNix/pixelimgjs/tree/1.0.1)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/DrMaxNix/pixelimgjs/blob/main/LICENSE)
 [![Maintaner](https://img.shields.io/badge/maintainer-DrMaxNix-blue)](https://www.drmaxnix.de)
 
