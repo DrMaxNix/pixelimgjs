@@ -7,6 +7,8 @@ Pixelimg.js is a rather small js-library to display code-generated pixel images 
 
 Used at [skyicon.drmaxnix.de](https://skyicon.drmaxnix.de).
 
+**[Code examples can be found at the bottom of this README!](https://github.com/DrMaxNix/pixelimgjs#examples)**
+
 
 ## Installation
 To include Pixelimg.js in your html code you have two options:
